@@ -1,0 +1,33 @@
+##########
+Firezilla
+##########
+
+Nombre del proyecto: David's Toys
+Servidor: proyectosinformaticatnl.ceti.mx
+Puerto: 22
+Nombre de usuario: daltdts
+Contraseña: a33fa3b50
+Carpeta raíz: pyvdj_21
+
+sftp://daltdts@proyectosinformaticatnl.ceti.mx/datos/sitios/pyvdj_21
+
+##########
+PHP My Admin
+##########
+
+cmd admin mode: SSH -v -N daltdts@proyectosinformaticatnl.ceti.mx -L 4000:127.0.0.1:443
+pass: a33fa3b50
+
+page: https://127.0.0.1:4000/phpmyadmin
+bd: pyvdj_21
+user: daltdts
+pass: a33fa3b50
+
+##########
+PDO - MYSQLI Credentials
+##########
+
+Host: localhost
+Database: pyvdj_21
+Usuario: daltdts
+Clave: a33fa3b50
