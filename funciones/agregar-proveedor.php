@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
@@ -65,7 +64,7 @@ if (isset($_POST["register"])) {
     if ($query->num_rows > 0) {
         echo "<script type='text/javascript'>
         alert('Provider already exists');
-        window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/agregar-proveedor.php');
+        window.location.replace('http://localhost/web/funciones/agregar-proveedor.php');
         </script>";
     } else {
         $sql = "INSERT INTO providers (
@@ -79,12 +78,12 @@ if (isset($_POST["register"])) {
 
         if ($mysqli->query($sql) === TRUE) {
             echo "<script type='text/javascript'>
-            window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-proveedores.php');
+            window.location.replace('http://localhost/web/funciones/ver-proveedores.php');
             </script>";
         } else {
             echo "<script type='text/javascript'>
             alert('Error while adding provider');
-            window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/agregar-proveedor.php');
+            window.location.replace('http://localhost/web/funciones/agregar-proveedor.php');
             </script>";
         }
     }

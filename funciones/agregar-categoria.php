@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
@@ -61,7 +60,7 @@ if (isset($_POST["register"])) {
     if ($query->rowCount() > 0) {
         echo "<script type='text/javascript'>
         alert('Category already exists');
-        window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/agregar-categoria.php');
+        window.location.replace('http://localhost/web/funciones/agregar-categoria.php');
         </script>";
     } else {
         $sql = "INSERT INTO categories (
@@ -75,12 +74,12 @@ if (isset($_POST["register"])) {
         $query = $conn->prepare($sql);
         if ($query->execute()) {
             echo "<script type='text/javascript'>
-            window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-categorias.php');
+            window.location.replace('http://localhost/web/funciones/ver-categorias.php');
             </script>";
         } else {
             echo "<script type='text/javascript'>
             alert('Error while adding product');
-            window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/agregar-categoria.php');
+            window.location.replace('http://localhost/web/funciones/agregar-categoria.php');
             </script>";
         }
     }

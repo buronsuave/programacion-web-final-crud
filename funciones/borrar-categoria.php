@@ -10,18 +10,18 @@ if (isset($_GET["id"])) {
         $query = $conn->prepare($sql);
         if ($query->execute()) {
             echo "<script type='text/javascript'>
-            window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-categorias.php');
+            window.location.replace('http://localhost/web/funciones/ver-categorias.php');
             </script>";
         } else {
             echo "<script type='text/javascript'>
             alert('Error while removing the category');
-            window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-categorias.php');
+            window.location.replace('http://localhost/web/funciones/ver-categorias.php');
             </script>";
         }
     }
 } else {
     echo "<script type='text/javascript'>
-        window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-categorias.php');
+        window.location.replace('http://localhost/web/funciones/ver-categorias.php');
         </script>";
 }
 

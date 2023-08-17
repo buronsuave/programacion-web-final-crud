@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<products>
+  <product id="1">
+    <name>Rubik 3x3 Cube</name>
+    <price>100</price>
+    <stock>100</stock>
+    <idCategory>4</idCategory>
+  </product>
+  <product id="2">
+    <name>Helicopter Cube</name>
+    <price>300</price>
+    <stock>20</stock>
+    <idCategory>4</idCategory>
+  </product>
+  <product id="3">
+    <name>Rubik 4x4 Cube</name>
+    <price>200</price>
+    <stock>50</stock>
+    <idCategory>4</idCategory>
+  </product>
+  <product id="4">
+    <name>Portal</name>
+    <price>300</price>
+    <stock>50</stock>
+    <idCategory>1</idCategory>
+  </product>
+  <product id="5">
+    <name>Portal 2</name>
+    <price>300</price>
+    <stock>50</stock>
+    <idCategory>1</idCategory>
+  </product>
+  <product id="6">
+    <name>The Golden Girls Jigsaw</name>
+    <price>500</price>
+    <stock>20</stock>
+    <idCategory>2</idCategory>
+  </product>
+  <product id="7">
+    <name>Majestic Park Puzzle</name>
+    <price>500</price>
+    <stock>20</stock>
+    <idCategory>2</idCategory>
+  </product>
+  <product id="8">
+    <name>Clue</name>
+    <price>250</price>
+    <stock>100</stock>
+    <idCategory>3</idCategory>
+  </product>
+  <product id="9">
+    <name>Monopoly</name>
+    <price>300</price>
+    <stock>100</stock>
+    <idCategory>3</idCategory>
+  </product>
+  <product id="10">
+    <name>Scrabble</name>
+    <price>350</price>
+    <stock>40</stock>
+    <idCategory>3</idCategory>
+  </product>
+  <product id="11">
+    <name>Battleship</name>
+    <price>400</price>
+    <stock>30</stock>
+    <idCategory>3</idCategory>
+  </product>
+  <product id="12">
+    <name>Risk</name>
+    <price>500</price>
+    <stock>20</stock>
+    <idCategory>3</idCategory>
+  </product>
+</products>

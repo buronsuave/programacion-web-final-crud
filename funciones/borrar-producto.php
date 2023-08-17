@@ -7,17 +7,17 @@ if (isset($_GET["id"])) {
     $query = $conn->prepare($sql);
     if ($query->execute()) {
         echo "<script type='text/javascript'>
-        window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-productos.php');
+        window.location.replace('http://localhost/web/funciones/ver-productos.php');
         </script>";
     } else {
         echo "<script type='text/javascript'>
         alert('Error while removing the product');
-        window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-productos.php');
+        window.location.replace('http://localhost/web/funciones/ver-productos.php');
         </script>";
     }
 } else {
     echo "<script type='text/javascript'>
-        window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-productos.php');
+        window.location.replace('http://localhost/web/funciones/ver-productos.php');
         </script>";
 }
 

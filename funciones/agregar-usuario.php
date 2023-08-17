@@ -98,11 +98,12 @@ if (isset($_POST["register"])) {
     if ($query->num_rows > 0) {
         echo "<script type='text/javascript'>
         alert('Username already exists');
-        window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/agregar-usuario.php');
+        window.location.replace('http://localhost/web/funciones/agregar-usuario.php');
         </script>";
     } else {
         $sql = "INSERT INTO users (
             `id` ,
+            `imageUrl`,
             `username`, 
             `name`, 
             `lastName`, 
@@ -111,6 +112,7 @@ if (isset($_POST["register"])) {
             )
             VALUES (
             NULL, 
+            NULL,
             '" . $_POST['username'] . "', 
             '" . $_POST['name'] . "', 
             '" . $_POST['lastName'] . "', 
@@ -127,7 +129,7 @@ if (isset($_POST["register"])) {
                 $target_path = $target_path . basename($_FILES['imageFile']['name']);
                 $target_path = preg_replace('/\s+/', '', $target_path);
                 if (move_uploaded_file($_FILES['imageFile']['tmp_name'], $target_path)) {
-                    $sql = "UPDATE users SET `imageUrl` = '" . "http://proyectosinformaticatnl.ceti.mx/pyvdj-21/files/" .
+                    $sql = "UPDATE users SET `imageUrl` = '" . "http://localhost/web/files/" .
                         $row["id"] . preg_replace('/\s+/', '', basename($_FILES['imageFile']['name'])) . "' WHERE id =" . $row["id"] . ";";
                 } else {
                     $sql = "DELETE FROM users WHERE id = " . $row["id"] . ";";
@@ -137,12 +139,12 @@ if (isset($_POST["register"])) {
             }
 
             echo "<script type='text/javascript'>
-            window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-usuarios.php');
+            window.location.replace('http://localhost/web/funciones/ver-usuarios.php');
             </script>";
         } else {
             echo "<script type='text/javascript'>
             alert('Error while adding user');
-            window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/agregar-usuario.php');
+            window.location.replace('http://localhost/web/funciones/agregar-usuario.php');
             </script>";
         }
     }

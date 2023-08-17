@@ -54,7 +54,7 @@
 
     } else if (!isset($_POST["register"])) {
         echo "<script type='text/javascript'>
-        window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-usuarios.php');
+        window.location.replace('http://localhost/web/funciones/ver-usuarios.php');
         </script>";
     }
 
@@ -148,7 +148,7 @@ if (isset($_POST["register"])) {
     if ($query->num_rows > 0) {
         echo "<script type='text/javascript'>
         alert('Username already exists');
-        window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-proveedores.php');
+        window.location.replace('http://localhost/web/funciones/ver-proveedores.php');
         </script>";
     } else {
         if (md5($_POST["oldPassword"]) === $password) {    
@@ -163,7 +163,7 @@ if (isset($_POST["register"])) {
                 
                 //Delete current file
                 $file_pointer = $imageUrl;
-                $file_pointer = str_replace("http://proyectosinformaticatnl.ceti.mx/pyvdj-21/files/", "../files/", $file_pointer);
+                $file_pointer = str_replace("http://localhost/web/files/", "../files/", $file_pointer);
 
                 if (!unlink($file_pointer)) {
                     echo "<script type='text/javascript'>
@@ -176,7 +176,7 @@ if (isset($_POST["register"])) {
                 $target_path = $target_path . basename($_FILES['imageFile']['name']);
                 $target_path = preg_replace('/\s+/', '', $target_path);
                 if (move_uploaded_file($_FILES['imageFile']['tmp_name'], $target_path)) {
-                    $sql = "UPDATE users SET imageUrl = '" . "http://proyectosinformaticatnl.ceti.mx/pyvdj-21/files/" .
+                    $sql = "UPDATE users SET imageUrl = '" . "http://localhost/web/files/" .
                         $id . preg_replace('/\s+/', '', basename($_FILES['imageFile']['name'])) . "' WHERE id =" . $id . ";";
                 } else {
                     $sql = "UPDATE usuarios SET usuarios.Imagen = NULL;";
@@ -197,19 +197,19 @@ if (isset($_POST["register"])) {
 
             if ($mysqli->query($sql) === TRUE) {
                 echo "<script type='text/javascript'>
-                window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-usuarios.php');
+                window.location.replace('http://localhost/web/funciones/ver-usuarios.php');
                 </script>";
             } else {
                 echo "<script type='text/javascript'>
                 alert('Error while editing user');
-                window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-usuarios.php');
+                window.location.replace('http://localhost/web/funciones/ver-usuarios.php');
                 </script>";
             }
 
         } else {
             echo "<script type='text/javascript'>
             alert('Wrong password');
-            window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-usuarios.php');
+            window.location.replace('http://localhost/web/funciones/ver-usuarios.php');
             </script>";
         }
     }

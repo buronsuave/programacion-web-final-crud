@@ -58,7 +58,7 @@ if (isset($_POST['showGraph'])) {
         default:
             echo "<script type='text/javascript'>
                 alert('Table could not be graphed');
-                window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/');
+                window.location.replace('http://localhost/web/');
                 </script>";
     }
 
@@ -66,7 +66,7 @@ if (isset($_POST['showGraph'])) {
 } else {
     echo "<script type='text/javascript'>
         alert('Post variable not set');
-        window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/');
+        window.location.replace('http://localhost/web/');
         </script>";
 }
 ?>

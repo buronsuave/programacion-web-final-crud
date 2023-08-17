@@ -49,7 +49,7 @@
         $name = $result["name"];
     } else if (!isset($_POST["register"])) {
         echo "<script type='text/javascript'>
-        window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-categorias.php');
+        window.location.replace('http://localhost/web/funciones/ver-categorias.php');
         </script>";
     }
 
@@ -84,7 +84,7 @@ if (isset($_POST["register"])) {
     if ($query->rowCount() > 0) {
         echo "<script type='text/javascript'>
         alert('Category already exists');
-        window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-categorias.php');
+        window.location.replace('http://localhost/web/funciones/ver-categorias.php');
         </script>";
     } else {
         $sql = "UPDATE categories SET 
@@ -96,12 +96,12 @@ if (isset($_POST["register"])) {
 
         if ($query->execute()) {
             echo "<script type='text/javascript'>
-            window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-categorias.php');
+            window.location.replace('http://localhost/web/funciones/ver-categorias.php');
             </script>";
         } else {
             echo "<script type='text/javascript'>
             alert('Error while editing category');
-            window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-categorias.php');
+            window.location.replace('http://localhost/web/funciones/ver-categorias.php');
             </script>";
         }
     }

@@ -41,7 +41,7 @@
 
                 echo "<script type='text/javascript'>
                     alert('Create Backup was successful');
-                    window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-categorias.php');
+                    window.location.replace('http://localhost/web/funciones/ver-categorias.php');
                     </script>";
 
                 break;
@@ -86,7 +86,7 @@
 
                 echo "<script type='text/javascript'>
                     alert('Create Backup was successful');
-                    window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-productos.php');
+                    window.location.replace('http://localhost/web/funciones/ver-productos.php');
                     </script>";
 
                 break;
@@ -123,7 +123,7 @@
 
                 echo "<script type='text/javascript'>
                     alert('Create Backup was successful');
-                    window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-proveedores.php');
+                    window.location.replace('http://localhost/web/funciones/ver-proveedores.php');
                     </script>";
 
                 break;
@@ -176,7 +176,7 @@
 
                 echo "<script type='text/javascript'>
                     alert('Create Backup was successful');
-                    window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-usuarios.php');
+                    window.location.replace('http://localhost/web/funciones/ver-usuarios.php');
                     </script>";
 
                 break;

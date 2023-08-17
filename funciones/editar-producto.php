@@ -53,7 +53,7 @@
 
     } else if (!isset($_POST["register"])) {
         echo "<script type='text/javascript'>
-        window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-productos.php');
+        window.location.replace('http://localhost/web/funciones/ver-productos.php');
         </script>";
     }
 
@@ -122,7 +122,7 @@ if (isset($_POST["register"])) {
     if ($query->rowCount() > 0) {
         echo "<script type='text/javascript'>
         alert('Product already exists');
-        window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-productos.php');
+        window.location.replace('http://localhost/web/funciones/ver-productos.php');
         </script>";
     } else {
         $sql = "UPDATE products SET 
@@ -137,12 +137,12 @@ if (isset($_POST["register"])) {
 
         if ($query->execute()) {
             echo "<script type='text/javascript'>
-            window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-productos.php');
+            window.location.replace('http://localhost/web/funciones/ver-productos.php');
             </script>";
         } else {
             echo "<script type='text/javascript'>
             alert('Error while editing product');
-            window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-productos.php');
+            window.location.replace('http://localhost/web/funciones/ver-productos.php');
             </script>";
         }
     }

@@ -9,7 +9,7 @@ if (isset($_GET["id"])) {
     }
 }
 echo "<script type='text/javascript'>
-    window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-proveedores.php');
+    window.location.replace('http://localhost/web/funciones/ver-proveedores.php');
     </script>";
 
 ?>

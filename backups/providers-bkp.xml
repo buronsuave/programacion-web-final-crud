@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<providers>
+  <provider id="1">
+    <name>Doctor Mann</name>
+    <firstDelivery>2023-01-01</firstDelivery>
+  </provider>
+  <provider id="2">
+    <name>Doctor Cooper</name>
+    <firstDelivery>2023-02-02</firstDelivery>
+  </provider>
+  <provider id="3">
+    <name>Doctor Hoop</name>
+    <firstDelivery>2023-08-02</firstDelivery>
+  </provider>
+</providers>

@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<users>
+  <user id="1">
+    <username>buronsuave</username>
+    <name>David</name>
+    <lastName>Lopez</lastName>
+    <password/>
+    <imageUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/1200px-User-avatar.svg.png</imageUrl>
+    <idUserType>1</idUserType>
+  </user>
+  <user id="2">
+    <username>dtejedas</username>
+    <name>Daniel</name>
+    <lastName>Tejeda</lastName>
+    <password/>
+    <imageUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/1200px-User-avatar.svg.png</imageUrl>
+    <idUserType>1</idUserType>
+  </user>
+  <user id="3">
+    <username>sergio_ruzza</username>
+    <name>Sergio</name>
+    <lastName>Ruiz</lastName>
+    <password/>
+    <imageUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/1200px-User-avatar.svg.png</imageUrl>
+    <idUserType>2</idUserType>
+  </user>
+  <user id="4">
+    <username>nintendero</username>
+    <name>Andres</name>
+    <lastName>Huerta</lastName>
+    <password/>
+    <imageUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/1200px-User-avatar.svg.png</imageUrl>
+    <idUserType>2</idUserType>
+  </user>
+  <user id="5">
+    <username>alanlop</username>
+    <name>Alan</name>
+    <lastName>Lopez</lastName>
+    <password/>
+    <imageUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/1200px-User-avatar.svg.png</imageUrl>
+    <idUserType>3</idUserType>
+  </user>
+  <user id="6">
+    <username>mcclovyn</username>
+    <name>Marco</name>
+    <lastName>Galindo</lastName>
+    <password/>
+    <imageUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/1200px-User-avatar.svg.png</imageUrl>
+    <idUserType>4</idUserType>
+  </user>
+  <user id="7">
+    <username>andy</username>
+    <name>Andrea</name>
+    <lastName>Barrera</lastName>
+    <password/>
+    <imageUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/1200px-User-avatar.svg.png</imageUrl>
+    <idUserType>4</idUserType>
+  </user>
+</users>

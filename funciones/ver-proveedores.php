@@ -131,7 +131,7 @@
             <script>
                 imageLoadError = context => {
                     context.onerror = null;
-                    context.src = 'http://proyectosinformaticatnl.ceti.mx/pyvdj-21/files/default.png';
+                    context.src = 'http://localhost/web/files/default.png';
                 }
             </script>
 

@@ -8,7 +8,7 @@ if (isset($_GET["id"])) {
     if ($result->num_rows > 0) {
         $row = mysqli_fetch_array($result);
         $file_pointer = $row["imageUrl"];
-        $file_pointer = str_replace("http://proyectosinformaticatnl.ceti.mx/pyvdj-21/files/", "../files/", $file_pointer);
+        $file_pointer = str_replace("http://localhost/web/files/", "../files/", $file_pointer);
         if (!unlink($file_pointer)) {
             echo "<script type='text/javascript'>
             alert('An error happened while removing the image from the server');
@@ -21,18 +21,18 @@ if (isset($_GET["id"])) {
         }
 
         echo "<script type='text/javascript'>
-        window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-usuarios.php');
+        window.location.replace('http://localhost/web/funciones/ver-usuarios.php');
         </script>";
 
     } else {
         echo "<script type='text/javascript'>
         alert('Something went wrong removing the user');
-        window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-usuarios.php');
+        window.location.replace('http://localhost/web/funciones/ver-usuarios.php');
         </script>";
     }
 } else {
     echo "<script type='text/javascript'>
-    window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-usuarios.php');
+    window.location.replace('http://localhost/web/funciones/ver-usuarios.php');
     </script>";
 }
 

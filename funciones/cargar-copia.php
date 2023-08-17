@@ -165,7 +165,7 @@
 
                             if (empty($user->imageUrl)) {
                                 echo "<td> " . '<img style="max-width: 75px; max-height: 75px" src="'
-                                    . "http://proyectosinformaticatnl.ceti.mx/pyvdj-21/files/default.png"
+                                    . "http://localhost/web/files/default.png"
                                     . '"></td>';
                             } else {
                                 echo "<td> " . '<img style="max-width: 75px; max-height: 75px" src="'
@@ -184,13 +184,13 @@
                     default:
                         echo "<script type='text/javascript'>
                         alert('unsupported index');
-                        window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/');
+                        window.location.replace('http://localhost/web/');
                         </script>";
                 }
             } else {
                 echo "<script type='text/javascript'>
                 alert('Post variable not set');
-                window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/');
+                window.location.replace('http://localhost/web/');
                 </script>";
             }
             ?>
@@ -359,7 +359,7 @@
         <script>
             const imageLoadError = context => {
                 context.onerror = null;
-                context.src = 'http://proyectosinformaticatnl.ceti.mx/pyvdj-21/files/default.png';
+                context.src = 'http://localhost/web/files/default.png';
             }
         </script>
     </content>

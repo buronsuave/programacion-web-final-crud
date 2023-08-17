@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
@@ -127,7 +126,7 @@
             <script>
                 imageLoadError = context => {
                     context.onerror = null;
-                    context.src = 'http://proyectosinformaticatnl.ceti.mx/pyvdj-21/files/default.png';
+                    context.src = 'http://localhost/web/files/default.png';
                 }
             </script>
 

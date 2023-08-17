@@ -50,7 +50,7 @@
 
     } else if (!isset($_POST["register"])) {
         echo "<script type='text/javascript'>
-        window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-proveedores.php');
+        window.location.replace('http://localhost/web/funciones/ver-proveedores.php');
         </script>";
     }
 
@@ -91,7 +91,7 @@ if (isset($_POST["register"])) {
     if ($query->num_rows > 0) {
         echo "<script type='text/javascript'>
         alert('Provider already exists');
-        window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-proveedores.php');
+        window.location.replace('http://localhost/web/funciones/ver-proveedores.php');
         </script>";
     } else {
         $sql = "UPDATE providers SET 
@@ -102,12 +102,12 @@ if (isset($_POST["register"])) {
             
         if ($mysqli->query($sql) === TRUE) {
             echo "<script type='text/javascript'>
-            window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-proveedores.php');
+            window.location.replace('http://localhost/web/funciones/ver-proveedores.php');
             </script>"; 
         } else {
             echo "<script type='text/javascript'>
             alert('Error while editing provider');
-            window.location.replace('http://proyectosinformaticatnl.ceti.mx/pyvdj-21/funciones/ver-proveedores.php');
+            window.location.replace('http://localhost/web/funciones/ver-proveedores.php');
             </script>";
         }
     }
